@@ -37,7 +37,7 @@ const Search:React.FC<Props> = ({urlAlbum}) => {
             }
             else{
                 // Tìm kiếm tên theo key word đã nhập
-                const result:Album[] = data.filter((item:Album)=> item.title.includes(valueSearch))
+                const result:Album[] = data.filter((item:Album)=> item.title.toLowerCase().includes(valueSearch.toLowerCase()))
                 
                 // Cập nhật lại dữ liệu trong useSWR trong component Home
                 mutate(urlAlbum,result,false)
