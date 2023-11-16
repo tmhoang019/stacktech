@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography } from '@mui/material';
-import Search from '../../pages/Home/Search';
 
 const MyComponent: React.FC = () => {
   return (
